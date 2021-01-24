@@ -1,0 +1,278 @@
+/* FONTS */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Poppins Light'), local('Poppins-Light'), url(./../../fonts/Poppins/Poppins-Light.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(./../../fonts/Poppins/Poppins-Regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Poppins Medium'), local('Poppins-Medium'), url(./../../fonts/Poppins/Poppins-Medium.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(./../../fonts/Poppins/Poppins-SemiBold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(./../../fonts/Poppins/Poppins-Bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Poppins Black'), local('Poppins-Black'), url(./../../fonts/Poppins/Poppins-Black.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+/* ROOT */
+:root {
+  --green         : #29c7ac;
+  --red           : #7208fd9d;
+  --dark          : #0e1316;
+}
+
+/* MAIN PROPERTIES */
+*:not(i) {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+}
+
+html {
+  overflow-x: hidden;
+  min-height: 2000px;
+}
+body {
+  font-size: 14px;
+  background: var(--dark);
+  color: #fff;
+}
+a, button, input, textarea {
+  text-decoration: none !important;
+  outline: none !important;
+  border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+a, button {
+  cursor: pointer;
+}
+p {
+  line-height: 1.7;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(41, 199, 173, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--green);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: greenyellow;
+}
+/* BACKGROUNDS */
+.bg_2 {
+  background: rgba(255, 255, 255, .02);
+}
+
+/* PRIMARY FILL BUTTON */
+.theme_primary_fill_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff !important;
+  border: 1px solid var(--green);
+  background: var(--green);
+  min-width: 165px;
+  transition: all .25s;
+}
+.theme_primary_fill_btn:hover {
+  background: var(--red);
+  border-color: var(--red);
+}
+
+/* PRIMARY TRANSPARENT BUTTOM */
+.theme_primary_transparent_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, .1);
+  min-width: 165px;
+  transition: all .25s;
+}
+.theme_primary_transparent_btn i {
+  color: var(--green);
+  transition: all .25s;
+}
+.theme_primary_transparent_btn:hover {
+  border-color: var(--green);
+  background: rgba(41, 199, 173, 0.1);
+}
+
+@media (max-width: 767.98px) {
+  .theme_primary_fill_btn,
+  .theme_primary_transparent_btn {
+    width: 100%;
+  }
+}
+
+/* SECTION TITLE */
+.section_title {
+  margin-bottom: 95px;
+}
+.section_title .title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+}
+.section_title .sub_title {
+  color: #ccc;
+  font-size: 16px;
+}
+@media (max-width: 767.98px) {
+  .section_title {
+    text-align: center;
+  }
+}
+
+/* NAVBAR */
+.theme_navbar {
+  
+  border-bottom: 1px solid rgba(41, 199, 173, 0.1);
+}
+/* logo */
+.theme_navbar .theme_logo img {
+  padding: 0px;
+  height: 55px;
+}
+/* link */
+.theme_navbar .navbar_link{
+  padding: 30px 0;
+}
+.theme_navbar .navbar_link a {
+  
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 500;
+  transition: all .25s;
+}
+/* toggler */
+.theme_navbar .navbar_toggler {
+  padding: 0;
+  height: 30px;
+  padding: 0;
+  background: transparent;
+}
+.theme_navbar .navbar_toggler span {
+  display: block;
+  border: 2px solid #FFF;
+  background: #FFF;
+  width: 40px;
+  transition: all .25s;
+}
+.theme_navbar .navbar_toggler span:nth-child(1) {
+  width: 20px;
+}
+.theme_navbar .navbar_toggler span:nth-child(2) {
+  width: 30px;
+}
+.theme_navbar.open .navbar_toggler span:nth-child(1),
+.theme_navbar.open .navbar_toggler span:nth-child(2) {
+  width: 40px;
+}
+@media (min-width: 992px) {
+  /* link */
+  .theme_navbar .navbar_link:not(:last-child) {
+    margin-right: 20px;
+  }
+  .theme_navbar .navbar_link a:hover {
+    color: var(--green);
+  }
+}
+@media (max-width: 991.98px) {
+  /* NAVBAR */
+  .theme_navbar {
+    
+  }
+  /* links */
+  .theme_navbar .navbar_links {
+    position: absolute;
+    top: 80px;
+    padding-left: 8px ;
+    z-index: 10;
+    background: var(--green);
+    left: 0;
+    box-shadow: 0 0 50px 10px rgba(0, 0, 0, .5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .25s;
+  }
+  .theme_navbar .navbar_links::before {
+    position: absolute;
+    content: '';
+    left: 10px;
+    top: -7px;
+    width: 16px;
+    height: 16px;
+    background: var(--green);
+    transform: rotate(45deg);
+    border-radius: 4px;
+  }
+  .theme_navbar.open .navbar_links {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* link */
+  .theme_navbar .navbar_link:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .theme_navbar .navbar_link a {
+    min-width: 200px;
+  }
+  .theme_navbar .navbar_link a:hover {
+    color: var(--dark);
+  }
+}
+
